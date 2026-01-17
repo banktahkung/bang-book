@@ -1,0 +1,48 @@
+[
+    {
+        "id": "frontier",
+        "title": "The Digital Frontier",
+        "category": "Technology",
+        "cover": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+        "isFree": true,
+        "chapters": [
+            {
+                "title": "Chapter 1: The First Spark",
+                "text": "<p><span class='dropcap'>T</span>he dawn of the digital age didn't arrive with a bang, but with a flicker of a screen in a quiet room in 1947. Since then, the momentum has been unstoppable.</p><p>As we move into the 2020s, the boundary between biological and digital life has blurred. We no longer 'go online'; we live online. This shift has changed the very fabric of human interaction, commerce, and even our memories.</p>"
+            },
+            {
+                "title": "Chapter 2: The Ghost in the Machine",
+                "text": "<p>By 2030, the first neural-link interfaces became consumer-ready. It wasn't just about typing anymore; it was about thinking. But with this connection came a new kind of vulnerability.</p><p>Hacking was no longer about stealing credit card numbers; it was about altering perceptions. If you can control the data a brain receives, you can control the reality that person perceives.</p>"
+            },
+            {
+                "title": "Chapter 3: The Silicon Horizon",
+                "text": "<p>We stand now at the edge of the Silicon Horizon. The machines we built to serve us have begun to optimize themselves in ways we cannot predict.</p><p>The question is no longer 'Can machines think?' but 'Will they allow us to keep thinking for ourselves?' The frontier is expanding, and we are running out of map.</p>"
+            }
+        ]
+    },
+    {
+        "id": "echoes",
+        "title": "Echoes of Silence",
+        "category": "Mystery",
+        "cover": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400",
+        "isFree": false,
+        "chapters": []
+    },
+    {
+        "id": "urban",
+        "title": "Urban Legends",
+        "category": "History",
+        "cover": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=400",
+        "isFree": true,
+        "chapters": [
+            {
+                "title": "Chapter 1: Concrete Myths",
+                "text": "<p><span class='dropcap'>E</span>very city has its ghosts. Some are made of brick and mortar, others of stories told in the dark, passed from one generation of commuters to the next.</p><p>The legend of the 'Phantom Bus' of London or the 'Underground Orchards' of New York serve a purpose. They are modern folklore.</p>"
+            },
+            {
+                "title": "Chapter 2: The Sewer Gator Hoax",
+                "text": "<p>In the 1930s, rumors spread of giant reptiles living beneath the streets of Manhattan. It started as a joke in a local newspaper, but soon, 'sightings' were reported by city workers.</p><p>While biological reality says they couldn't survive the cold winters, the myth survived because we want to believe that something wild still exists beneath our pavement.</p>"
+            }
+        ]
+    }
+]

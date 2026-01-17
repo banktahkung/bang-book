@@ -1,0 +1,365 @@
+/* --- 1. VARIABLES & RESET --- */
+:root {
+    --primary-green: #10b981;
+    --dark-green: #059669;
+    --light-green: #ecfdf5;
+    --text-main: #1f2937;
+    --text-muted: #6b7280;
+    --bg-gray: #f9fafb;
+    --max-width: 1300px;
+    /* Wide desktop container */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 40px;
+}
+
+/* --- 2. NAVIGATION --- */
+.navbar {
+    padding: 1rem 0;
+    background: white;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo {
+    height: 32px;
+    /* Fixed elegant height for PC */
+    width: auto;
+}
+
+.brand-name {
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: var(--primary-green);
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* --- 3. HERO --- */
+.hero {
+    padding: 140px 0;
+    text-align: center;
+    background: linear-gradient(180deg, var(--light-green) 0%, #ffffff 100%);
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.highlight {
+    color: var(--primary-green);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 750px;
+    margin: 0 auto 2.5rem;
+    color: var(--text-muted);
+}
+
+/* --- 4. LATEST RELEASES SECTION --- */
+.library {
+    padding: 100px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.book-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary-green);
+}
+
+.cover-wrapper {
+    position: relative;
+    height: 380px;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.premium-label {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    color: #fbbf24;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    z-index: 2;
+}
+
+.book-meta {
+    padding: 25px;
+    background: #fff;
+    flex-grow: 1;
+}
+
+.category {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--primary-green);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.book-meta h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.read-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--text-main);
+    transition: color 0.2s;
+}
+
+.read-link:hover {
+    color: var(--primary-green);
+}
+
+/* --- 5. PRICING SECTION --- */
+.pricing {
+    padding: 100px 0;
+    background: var(--bg-gray);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    padding: 3.5rem 2rem;
+    border-radius: 24px;
+    border: 1px solid #eee;
+    text-align: center;
+    position: relative;
+}
+
+.featured {
+    border: 2px solid var(--primary-green);
+    transform: scale(1.03);
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-green);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+.price span {
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+.features {
+    list-style: none;
+    margin: 25px 0;
+    color: var(--text-muted);
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+/* --- 6. BUTTONS --- */
+.btn-primary,
+.btn-large,
+.btn-outline {
+    padding: 0.8rem 1.8rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-primary,
+.btn-large {
+    background: var(--primary-green);
+    color: white;
+    border: none;
+}
+
+.btn-large {
+    padding: 1.2rem 3rem;
+    font-size: 1.1rem;
+}
+
+.btn-outline {
+    border: 2px solid var(--primary-green);
+    color: var(--primary-green);
+}
+
+/* --- 7. FOOTER --- */
+.main-footer {
+    padding: 80px 0 20px;
+    border-top: 1px solid #eee;
+    background: white;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Fixed small footer logo */
+.footer-logo {
+    height: 24px;
+    width: auto;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    border-top: 1px solid #f3f4f6;
+    padding-top: 20px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* --- 8. MOBILE RESPONSIVENESS --- */
+@media (max-width: 1024px) {
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+}

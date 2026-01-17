@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reader | Bang Book</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reader-style.css">
+</head>
+
+<body class="reader-layout">
+
+    <nav class="reader-nav">
+        <div class="nav-left">
+            <a href="index.html" class="back-btn">← Home</a>
+            <div class="nav-divider"></div>
+            <span class="brand-name-small">BANG BOOK <span class="reader-tag">READER</span></span>
+        </div>
+
+        <div class="reader-controls">
+            <div class="control-group">
+                <button onclick="changeFontSize(-1)">A-</button>
+                <button onclick="changeFontSize(1)">A+</button>
+            </div>
+            <button id="themeToggle" class="icon-btn">🌙</button>
+        </div>
+    </nav>
+
+    <div class="main-reader-container">
+        <aside class="library-sidebar">
+            <div class="sidebar-header">
+                <h3>Library</h3>
+            </div>
+            <ul class="book-list" id="sidebarList">
+            </ul>
+        </aside>
+
+        <main class="reading-pane" id="readingPane">
+            <article class="reader-article">
+                <h1 id="bookTitleDisplay">Select a Book</h1>
+                <div id="bookContentBody" class="content-body">
+                    <p class="placeholder-text">Choose a title from the library to begin reading.</p>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
