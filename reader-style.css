@@ -3,6 +3,7 @@
     --text-main: #1f2937;
     --text-muted: #6b7280;
     --sidebar-bg: #f8fafc;
+    --nav-height: 60px;
 }
 
 * {
@@ -14,6 +15,7 @@
 body {
     font-family: 'Inter', sans-serif;
     overflow: hidden;
+    /* Prevents the whole page from scrolling */
     background: #fff;
     color: var(--text-main);
 }
@@ -24,9 +26,9 @@ body {
     flex-direction: column;
 }
 
-/* Navigation */
+/* --- Navigation --- */
 .reader-nav {
-    height: 60px;
+    height: var(--nav-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,6 +36,8 @@ body {
     border-bottom: 1px solid #eee;
     background: white;
     z-index: 100;
+    flex-shrink: 0;
+    /* Ensures nav doesn't squash */
 }
 
 .nav-left {
@@ -61,7 +65,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* Reader Controls */
+/* --- Reader Controls --- */
 .reader-controls {
     display: flex;
     align-items: center;
@@ -89,11 +93,12 @@ body {
     font-size: 1.2rem;
 }
 
-/* Sidebar & Main Layout */
+/* --- Sidebar & Main Layout --- */
 .main-reader-container {
     display: flex;
     flex: 1;
     overflow: hidden;
+    /* Required to let children handle their own scrolls */
 }
 
 .library-sidebar {
@@ -101,17 +106,41 @@ body {
     background: var(--sidebar-bg);
     border-right: 1px solid #eee;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    /* Stacks header and list */
+    height: 100%;
 }
 
 .sidebar-header {
     padding: 1.5rem;
     border-bottom: 1px solid #eee;
+    flex-shrink: 0;
+    /* Header stays fixed at top */
 }
 
 .book-list {
     list-style: none;
+    flex: 1;
+    /* Takes up remaining sidebar space */
     overflow-y: auto;
-    padding-bottom: 100px;
+    /* ENABLE VERTICAL SCROLL ON PC */
+    overflow-x: hidden;
+    padding-bottom: 50px;
+}
+
+/* Custom Scrollbar for Sidebar */
+.book-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.book-list::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 10px;
+}
+
+.book-list::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-green);
 }
 
 .book-item {
@@ -138,9 +167,24 @@ body {
     border-radius: 4px;
     object-fit: cover;
     margin-right: 12px;
+    flex-shrink: 0;
 }
 
-/* Reading Pane */
+.book-info h4 {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.status-text {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* --- Reading Pane --- */
 .reading-pane {
     flex: 1;
     overflow-y: auto;
@@ -162,7 +206,7 @@ body {
     font-weight: 800;
 }
 
-/* Chapter Styling */
+/* --- Chapter Styling --- */
 .chapter-box {
     margin-bottom: 50px;
     animation: fadeIn 0.6s ease;
@@ -184,7 +228,7 @@ body {
     color: var(--primary-green);
 }
 
-/* --- Mobile Responsive: The "Shrink" Logic --- */
+/* --- Mobile Responsive Logic --- */
 @media (max-width: 768px) {
     .main-reader-container {
         flex-direction: column;
@@ -202,7 +246,9 @@ body {
 
     .book-list {
         display: flex;
+        /* Horizontal row on mobile */
         overflow-x: auto;
+        overflow-y: hidden;
         padding: 10px;
         gap: 10px;
     }
@@ -214,6 +260,12 @@ body {
         border: 1px solid #eee;
         border-radius: 8px;
         background: white;
+        padding: 10px;
+    }
+
+    .book-item.active {
+        border-left: none;
+        border-bottom: 4px solid var(--primary-green);
     }
 
     .book-item img {
@@ -227,8 +279,7 @@ body {
 
     /* Shrunk Class (triggered by JS) */
     .library-sidebar.shrunk {
-        height: 70px;
-        overflow: hidden;
+        height: 80px;
     }
 
     .library-sidebar.shrunk .sidebar-header,
@@ -238,18 +289,18 @@ body {
     }
 
     .library-sidebar.shrunk .book-item {
-        flex: 0 0 50px;
+        flex: 0 0 60px;
         border: none;
         padding: 5px;
     }
 
     .library-sidebar.shrunk .book-item img {
-        width: 35px;
-        height: 45px;
+        width: 40px;
+        height: 55px;
     }
 }
 
-/* Dark Mode */
+/* --- Dark Mode --- */
 body.dark-theme {
     background: #111;
     color: #eee;
@@ -266,6 +317,14 @@ body.dark-theme .book-item:hover {
 
 body.dark-theme .book-item.active {
     background: #064e3b;
+}
+
+body.dark-theme .control-group {
+    background: #2d3748;
+}
+
+body.dark-theme .control-group button {
+    color: #fff;
 }
 
 @keyframes fadeIn {

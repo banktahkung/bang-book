@@ -1,48 +1,374 @@
 [
-    {
-        "id": "frontier",
-        "title": "The Digital Frontier",
-        "category": "Technology",
-        "cover": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
-        "isFree": true,
-        "chapters": [
-            {
-                "title": "Chapter 1: The First Spark",
-                "text": "<p><span class='dropcap'>T</span>he dawn of the digital age didn't arrive with a bang, but with a flicker of a screen in a quiet room in 1947. Since then, the momentum has been unstoppable.</p><p>As we move into the 2020s, the boundary between biological and digital life has blurred. We no longer 'go online'; we live online. This shift has changed the very fabric of human interaction, commerce, and even our memories.</p>"
-            },
-            {
-                "title": "Chapter 2: The Ghost in the Machine",
-                "text": "<p>By 2030, the first neural-link interfaces became consumer-ready. It wasn't just about typing anymore; it was about thinking. But with this connection came a new kind of vulnerability.</p><p>Hacking was no longer about stealing credit card numbers; it was about altering perceptions. If you can control the data a brain receives, you can control the reality that person perceives.</p>"
-            },
-            {
-                "title": "Chapter 3: The Silicon Horizon",
-                "text": "<p>We stand now at the edge of the Silicon Horizon. The machines we built to serve us have begun to optimize themselves in ways we cannot predict.</p><p>The question is no longer 'Can machines think?' but 'Will they allow us to keep thinking for ourselves?' The frontier is expanding, and we are running out of map.</p>"
-            }
-        ]
-    },
-    {
-        "id": "echoes",
-        "title": "Echoes of Silence",
-        "category": "Mystery",
-        "cover": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400",
-        "isFree": false,
-        "chapters": []
-    },
-    {
-        "id": "urban",
-        "title": "Urban Legends",
-        "category": "History",
-        "cover": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=400",
-        "isFree": true,
-        "chapters": [
-            {
-                "title": "Chapter 1: Concrete Myths",
-                "text": "<p><span class='dropcap'>E</span>very city has its ghosts. Some are made of brick and mortar, others of stories told in the dark, passed from one generation of commuters to the next.</p><p>The legend of the 'Phantom Bus' of London or the 'Underground Orchards' of New York serve a purpose. They are modern folklore.</p>"
-            },
-            {
-                "title": "Chapter 2: The Sewer Gator Hoax",
-                "text": "<p>In the 1930s, rumors spread of giant reptiles living beneath the streets of Manhattan. It started as a joke in a local newspaper, but soon, 'sightings' were reported by city workers.</p><p>While biological reality says they couldn't survive the cold winters, the myth survived because we want to believe that something wild still exists beneath our pavement.</p>"
-            }
-        ]
-    }
+  {
+    "id": "frontier",
+    "title": "The Digital Frontier",
+    "category": "Technology",
+    "cover": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "isFree": true,
+    "chapters": [
+      {
+        "title": "Chapter 1: The First Spark",
+        "text": "<p>The dawn of the digital age didn't arrive with a bang, but with a flicker of a screen in a quiet room in 1947. Since then, the momentum has been unstoppable.</p><p>As we move into the 2020s, the boundary between biological and digital life has blurred. We no longer 'go online'; we live online. This shift has changed the very fabric of human interaction, commerce, and even our memories.</p>"
+      },
+      {
+        "title": "Chapter 2: The Ghost in the Machine",
+        "text": "<p>By 2030, the first neural-link interfaces became consumer-ready. It wasn't just about typing anymore; it was about thinking. But with this connection came a new kind of vulnerability.</p><p>Hacking was no longer about stealing credit card numbers; it was about altering perceptions. If you can control the data a brain receives, you can control the reality that person perceives.</p>"
+      },
+      {
+        "title": "Chapter 3: The Silicon Horizon",
+        "text": "<p>We stand now at the edge of the Silicon Horizon. The machines we built to serve us have begun to optimize themselves in ways we cannot predict.</p><p>The question is no longer 'Can machines think?' but 'Will they allow us to keep thinking for ourselves?' The frontier is expanding, and we are running out of map.</p>"
+      },
+      {
+        "title": "Chapter 4: Neural Ethics",
+        "text": "<p>As our minds merge with the cloud, the question of 'who owns a thought' becomes a legal nightmare. If an AI enhances your creativity, does the resulting art belong to you or the software provider?</p>"
+      },
+      {
+        "title": "Chapter 5: The Final Upload",
+        "text": "<p>The ultimate goal for some is digital immortality. To leave the flesh behind and exist as pure data. But in a world of infinite copies, what happens to the soul?</p>"
+      }
+    ]
+  },
+  {
+    "id": "quran-01",
+    "title": "The Holy Quran",
+    "category": "Religion",
+    "cover": "https://images.unsplash.com/photo-1584281722573-69027376b437?w=400",
+    "isFree": true,
+    "chapters": [
+      {
+        "title": "1. Al-Fatiha (The Opening)",
+        "text": "<p>In the name of Allah, the Entirely Merciful, the Especially Merciful. [All] praise is [due] to Allah, Lord of the worlds - The Entirely Merciful, the Especially Merciful, Sovereign of the Day of Recompense.</p><p>It is You we worship and You we ask for help. Guide us to the straight path - The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray.</p>"
+      },
+      {
+        "title": "2. Al-Baqarah (The Guidance)",
+        "text": "<p>This is the Book about which there is no doubt, a guidance for those conscious of Allah. Who believe in the unseen, establish prayer, and spend out of what We have provided for them.</p><p>And who believe in what has been revealed to you, [O Muhammad], and what was revealed before you, and of the Hereafter they are certain [in faith].</p>"
+      },
+      {
+        "title": "3. Al-Imran (The Family of Imran)",
+        "text": "<p>Allah, there is no deity except Him, the Ever-Living, the Sustainer of existence. He has sent down upon you, [O Muhammad], the Book in truth, confirming what was before it.</p><p>And He revealed the Torah and the Gospel. Before, as guidance for the people. And He revealed the Qur'an.</p>"
+      },
+      {
+        "title": "4. An-Nisa (The Women)",
+        "text": "<p>O mankind, fear your Lord, who created you from one soul and created from it its mate and dispersed from them many men and women.</p><p>And fear Allah, through whom you ask one another, and the wombs. Indeed Allah is ever, over you, an Observer.</p>"
+      },
+      {
+        "title": "5. Al-Ma'idah (The Table Spread)",
+        "text": "<p>O you who have believed, fulfill [all] contracts. Lawful for you are the animals of grazing livestock except for that which is recited to you [in this Qur'an].</p><p>Allah commands what He intends. This chapter emphasizes the importance of covenants and social justice.</p>"
+      }
+    ]
+  },
+  {
+    "id": "free-01",
+    "title": "Art of the Forest",
+    "category": "Nature",
+    "cover": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400",
+    "isFree": true,
+    "chapters": [
+      {
+        "title": "Chapter 1: The Wood Wide Web",
+        "text": "<p>Beneath the soil of every healthy forest lies a complex network of fungal threads known as mycelium. This hidden architecture allows trees to communicate, sharing sugar, water, and even chemical warnings about pests.</p><p>When an old 'Mother Tree' begins to die, she offloads her carbon and nutrients into this network to support the younger saplings around her, ensuring the survival of the collective.</p>"
+      },
+      {
+        "title": "Chapter 2: The Geometry of Leaves",
+        "text": "<p>Nature is a master mathematician. From the Fibonacci sequence found in pinecones to the fractals of a fern, every shape serves a purpose for survival.</p>"
+      },
+      {
+        "title": "Chapter 3: Ancient Sentinels",
+        "text": "<p>Some Bristlecone pines have lived for over 5,000 years. They have stood silent through the rise and fall of entire human empires, recording history in their rings.</p>"
+      },
+      {
+        "title": "Chapter 4: The Night Shift",
+        "text": "<p>As the sun sets, a different forest emerges. Owls, bats, and bioluminescent fungi take over, proving that life never truly sleeps.</p>"
+      },
+      {
+        "title": "Chapter 5: Protecting the Canopy",
+        "text": "<p>The forest is the lungs of our planet. Without these vast green cathedrals, the balance of our atmosphere would crumble instantly.</p>"
+      }
+    ]
+  },
+  {
+    "id": "free-04",
+    "title": "Zen Moments",
+    "category": "Self-Help",
+    "cover": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400",
+    "isFree": true,
+    "chapters": [
+      {
+        "title": "Chapter 1: The Art of Breathing",
+        "text": "<p>In the rush of modern life, we often forget the simplest act of existence: the breath. Deep, mindful breathing signals to the nervous system that you are safe.</p><p>By focusing on the inhalation and exhalation, you anchor yourself in the present moment, leaving behind the anxieties of the past and the uncertainties of the future.</p>"
+      },
+      {
+        "title": "Chapter 2: Clearing the Mental Clutter",
+        "text": "<p>Our minds are often like a busy intersection at rush hour. To find peace, we must learn to observe our thoughts without judging them or being swept away by them.</p>"
+      },
+      {
+        "title": "Chapter 3: The Power of No",
+        "text": "<p>Saying 'no' to others is often a 'yes' to your own mental health. Setting boundaries is not selfish; it is a necessary act of self-preservation in an over-stimulated world.</p>"
+      },
+      {
+        "title": "Chapter 4: Morning Rituals",
+        "text": "<p>How you spend the first hour of your day determines the quality of the next fifteen. A morning without a screen is a morning of clarity.</p>"
+      },
+      {
+        "title": "Chapter 5: Gratitude in Small Things",
+        "text": "<p>True happiness is not found in grand achievements, but in the appreciation of a warm cup of tea, a kind word, or a beautiful sunset.</p>"
+      }
+    ]
+  },
+  {
+    "id": "free-08",
+    "title": "Ancient Greece",
+    "category": "History",
+    "cover": "https://images.unsplash.com/photo-1503152394-c571994fd383?w=400",
+    "isFree": true,
+    "chapters": [
+      {
+        "title": "Chapter 1: The Birth of Democracy",
+        "text": "<p>In the rocky hills of Athens, a radical idea was born: that the people should rule themselves. It was not a perfect system, but it laid the foundation for the modern world.</p><p>Citizens would gather at the Pnyx to debate laws, demonstrating that the power of speech was more potent than the power of a king's sword.</p>"
+      },
+      {
+        "title": "Chapter 2: Philosophy and the Stoics",
+        "text": "<p>Socrates, Plato, and Aristotle asked the questions we still struggle with today: What is justice? What is a good life? Their logic shaped Western thought for two millennia.</p>"
+      },
+      {
+        "title": "Chapter 3: The Olympic Spirit",
+        "text": "<p>Every four years, wars would cease. Athletes from all city-states traveled to Olympia to compete, proving that excellence was a form of worship to the gods.</p>"
+      },
+      {
+        "title": "Chapter 4: The Spartan Discipline",
+        "text": "<p>While Athens was a city of art, Sparta was a city of iron. From age seven, boys were trained for one thing: the phalanx. Their bravery at Thermopylae became legend.</p>"
+      },
+      {
+        "title": "Chapter 5: Myths and Monsters",
+        "text": "<p>The Greeks used stories of Zeus, Athena, and Poseidon to explain the chaos of the world. These myths were not just stories; they were a mirror to the human psyche.</p>"
+      }
+    ]
+  },
+  {
+    "id": "free-02",
+    "title": "The Simple Home",
+    "category": "Lifestyle",
+    "cover": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=400",
+    "isFree": true,
+    "chapters": [
+      {
+        "title": "Chapter 1: Minimalism Defined",
+        "text": "<p>Minimalism isn't about owning nothing; it's about making sure that everything you own has a purpose or brings you joy. It is a rebellion against consumerism.</p>"
+      },
+      {
+        "title": "Chapter 2: Decluttering the Soul",
+        "text": "<p>As you clear your physical space, you will find that your mental space clears as well. Physical objects carry emotional weight that we often don't notice.</p>"
+      },
+      {
+        "title": "Chapter 3: Sustainable Living",
+        "text": "<p>A simple home is a green home. By buying less and choosing quality over quantity, we reduce our footprint on the Earth while saving our own resources.</p>"
+      },
+      {
+        "title": "Chapter 4: The Digital Detox",
+        "text": "<p>Our homes should be sanctuaries, not extensions of our offices. Designating tech-free zones allows for real human connection to flourish.</p>"
+      },
+      {
+        "title": "Chapter 5: Creating a Sanctuary",
+        "text": "<p>Lighting, scent, and texture. Learn how to use these simple elements to transform a standard living space into a place of deep restoration.</p>"
+      }
+    ]
+  },
+  {
+    "id": "free-03",
+    "title": "Mars: The Red Hope",
+    "category": "Space",
+    "cover": "https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=400",
+    "isFree": true,
+    "chapters": [
+      {
+        "title": "Chapter 1: The Red Mirage",
+        "text": "<p>Mars has haunted the human imagination since the first astronomers looked through primitive telescopes. Its reddish hue, caused by iron oxide, led ancient civilizations to name it after the God of War.</p>"
+      },
+      {
+        "title": "Chapter 2: The Gravity of the Situation",
+        "text": "<p>Living on Mars means living with only 38% of Earth's gravity. While this might allow you to jump three times as high, it poses significant health risks for bone density.</p>"
+      },
+      {
+        "title": "Chapter 3: Searching for Ancient Life",
+        "text": "<p>The search for life on Mars isn't about finding little green men; it's about finding microbes. Rovers like Perseverance are currently drilling for organic molecules.</p>"
+      },
+      {
+        "title": "Chapter 4: The Dust Storms",
+        "text": "<p>Mars is home to the largest dust storms in the solar system. These can grow to encompass the entire planet, blotting out the sun for months.</p>"
+      },
+      {
+        "title": "Chapter 5: Terraforming the Future",
+        "text": "<p>Could we ever make Mars look like Earth? Terraforming represents the ultimate ambition of our species: to become a multi-planetary civilization.</p>"
+      }
+    ]
+  },
+  {
+    "id": "free-05",
+    "title": "Code for Beginners",
+    "category": "Education",
+    "cover": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=400",
+    "isFree": true,
+    "chapters": [
+      {
+        "title": "Chapter 1: The Logic of Machines",
+        "text": "<p>Programming is more than syntax; it is a way of thinking. At its core, it is about breaking down complex problems into tiny, manageable steps.</p>"
+      },
+      {
+        "title": "Chapter 2: Variables and Data Types",
+        "text": "<p>Imagine a variable as a labeled box. Inside that box, you can store information like a number, a name, or a true/false value.</p>"
+      },
+      {
+        "title": "Chapter 3: Control Flow (If/Else)",
+        "text": "<p>Control flow is the 'brain' of your program. It allows the code to make decisions based on certain conditions, creating dynamic user experiences.</p>"
+      },
+      {
+        "title": "Chapter 4: The Power of Loops",
+        "text": "<p>Computers excel at doing repetitive tasks. Loops allow you to run a block of code thousands of times without manual intervention.</p>"
+      },
+      {
+        "title": "Chapter 5: Functions and Modularity",
+        "text": "<p>As your programs grow, you don't want to repeat the same code. Functions allow you to wrap a set of instructions into a reusable package.</p>"
+      }
+    ]
+  },
+  {
+    "id": "free-06",
+    "title": "The Last Runner",
+    "category": "Fiction",
+    "cover": "https://images.unsplash.com/photo-1461896744583-6ba0d557cf12?w=400",
+    "isFree": true,
+    "chapters": [
+      {
+        "title": "Chapter 1: The 800m Ordeal",
+        "text": "<p>The track was a circle of fire. For Jean-Patrick, every stride was a battle against the silence of the stadium. The crowd was a memory, but the clock was real.</p>"
+      },
+      {
+        "title": "Chapter 2: Training in the Rain",
+        "text": "<p>The city was gray, but his spirit was neon. He ran through the puddles of the old district, finding rhythm in the chaos of a falling world.</p>"
+      },
+      {
+        "title": "Chapter 3: The Rival",
+        "text": "<p>Elias was faster, younger, and stronger. But Elias didn't have the scars that kept Jean-Patrick moving. In the end, racing is a mental game.</p>"
+      },
+      {
+        "title": "Chapter 4: The Heart's Limit",
+        "text": "<p>A doctor told him to stop. His pulse was a warning. But how do you stop the only thing that makes you feel alive?</p>"
+      },
+      {
+        "title": "Chapter 5: The Final Sprint",
+        "text": "<p>As the finish line approached, the world blurred. It wasn't about the gold medal anymore; it was about finishing the race on his own terms.</p>"
+      }
+    ]
+  },
+  {
+    "id": "free-07",
+    "title": "Ocean Wonders",
+    "category": "Science",
+    "cover": "https://images.unsplash.com/photo-1518467166778-b88f373ffec7?w=400",
+    "isFree": true,
+    "chapters": [
+      {
+        "title": "Chapter 1: The Sunlit Zone",
+        "text": "<p>The top layer of the ocean is a global garden. Tiny plankton use sunlight to create the very oxygen we breathe. Life thrives in the blue light.</p>"
+      },
+      {
+        "title": "Chapter 2: The Twilight Realm",
+        "text": "<p>Descending 200 meters, the light fades. Here, creatures use bioluminescence to lure prey or hide from predators in the dim, ghostly blue.</p>"
+      },
+      {
+        "title": "Chapter 3: The Midnight Abyss",
+        "text": "<p>In the deep trenches, the pressure is enough to crush a submarine. Yet, life persists around hydrothermal vents, feeding on chemicals instead of sun.</p>"
+      },
+      {
+        "title": "Chapter 4: Giants of the Deep",
+        "text": "<p>Blue whales are the largest animals to ever exist. Their songs travel thousands of miles through the water, communicating across entire oceans.</p>"
+      },
+      {
+        "title": "Chapter 5: Saving the Coral",
+        "text": "<p>Coral reefs are the rainforests of the sea. As temperatures rise, we are in a race to protect these vital ecosystems before they turn to bone-white desert.</p>"
+      }
+    ]
+  },
+  {
+    "id": "free-09",
+    "title": "The Minimalist Kitchen",
+    "category": "Cooking",
+    "cover": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=400",
+    "isFree": true,
+    "chapters": [
+      {
+        "title": "Chapter 1: Essential Tools",
+        "text": "<p>A functional kitchen doesn't need a gadget for every task. With a sharp chef's knife and a heavy cast iron skillet, you can conquer the culinary world.</p>"
+      },
+      {
+        "title": "Chapter 2: The Pantry Staples",
+        "text": "<p>Grain, oil, spice, and salt. If you have these four things, you are never more than twenty minutes away from a gourmet meal.</p>"
+      },
+      {
+        "title": "Chapter 3: The Art of One-Pot",
+        "text": "<p>Cooking should be a joy, not a chore. Learn how to layer flavors in a single vessel to minimize cleanup and maximize taste.</p>"
+      },
+      {
+        "title": "Chapter 4: Seasonality",
+        "text": "<p>Eating with the seasons isn't just a trend; it's how food is meant to taste. A tomato in July is a different fruit than a tomato in January.</p>"
+      },
+      {
+        "title": "Chapter 5: Zero-Waste Cooking",
+        "text": "<p>Scraps are just ingredients you haven't used yet. Turn vegetable peels into stock and stale bread into croutons. Respect the ingredient.</p>"
+      }
+    ]
+  },
+  {
+    "id": "free-10",
+    "title": "Starry Nights",
+    "category": "Poetry",
+    "cover": "https://images.unsplash.com/photo-1464802686167-b939a67e0524?w=400",
+    "isFree": true,
+    "chapters": [
+      {
+        "title": "Chapter 1: The Infinite Volume",
+        "text": "<p>When I survey the bright celestial sphere, so rich with jewels hung. The night sky is a holy book where man may learn of things eternal and unchanging.</p>"
+      },
+      {
+        "title": "Chapter 2: Moon-Shadows",
+        "text": "<p>The silver orb reflects the light of a sun we cannot see. In the garden of the night, every shadow tells a story of what was lost and what remains.</p>"
+      },
+      {
+        "title": "Chapter 3: Stardust in Our Veins",
+        "text": "<p>We are made of the same atoms that forged the stars. When we look up, we are not looking away from home, we are looking directly at it.</p>"
+      },
+      {
+        "title": "Chapter 4: The Orion Hunter",
+        "text": "<p>Across the winter sky, the giant strides. His belt of three bright stones reminds us that even the heavens have heroes and myths.</p>"
+      },
+      {
+        "title": "Chapter 5: Dawn's First Whisper",
+        "text": "<p>The blue hour arrives before the sun. The stars fade one by one, leaving us with the task of being human for another day.</p>"
+      }
+    ]
+  },
+  {
+    "id": "premium-01",
+    "title": "The Quantum CEO",
+    "category": "Business",
+    "cover": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400",
+    "isFree": false,
+    "chapters": []
+  },
+  {
+    "id": "premium-02",
+    "title": "Neon Dreams",
+    "category": "Sci-Fi",
+    "cover": "https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=400",
+    "isFree": false,
+    "chapters": []
+  },
+  {
+    "id": "premium-03",
+    "title": "The Culinary Architect",
+    "category": "Cooking",
+    "cover": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400",
+    "isFree": false,
+    "chapters": []
+  }
 ]
